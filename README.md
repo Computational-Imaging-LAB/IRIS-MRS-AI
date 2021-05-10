@@ -37,7 +37,6 @@ IRIS-MRS-AI is the tool that classifies IDH and TERTp mutations in gliomas using
    
 - Standalone distributions on Mac, Linux, and Windows. (Can be used on MATLAB simply by cloning this repo.)
 
--
 
 
 
@@ -56,9 +55,9 @@ For using on MATLAB please download this repo and add all folders and subfolders
 For any problem please check the program log and then report it to the issues. 
 
 # How to get started and User Documentation
-[Oryx-MRSI Documentation](https://sevimcengiz.github.io/oryx/)
-*
-[Oryx-MRSI Manual](https://github.com/Computational-Imaging-LAB/IRIS-MRS-AI/blob/main/IRIS_Manual.pdf)
+- [IRIS-MRS-AI Documentation](https://sevimcengiz.github.io/oryx/)
+
+- [IRIS-MRS-AI Manual](https://github.com/Computational-Imaging-LAB/IRIS-MRS-AI/blob/main/IRIS_Manual.pdf)
 
 # Developers
 
