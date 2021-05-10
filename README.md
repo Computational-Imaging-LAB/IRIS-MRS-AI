@@ -1,9 +1,8 @@
 [![Website monip.org](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)](https://sevimcengiz.github.io/)
 [![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](https://sevimcengiz.github.io/oryx/)
 ![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)
-[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/sevimcengiz)
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/abdullahbas)
 # IRIS-MRS-AI
-<img src="https://user-images.githubusercontent.com/5468765/108315274-9c0c7680-71d4-11eb-9040-7e6248ea55b8.png" width="100" height="100">
 IRIS-MRS-AI is the tool that classifies IDH and TERTp mutations in gliomas using MR Spectroscopy and Mass Spectrometry data. Besides these features, IRIS-MRS-AI is a tool that capable to create new models using users own data. Users can customize the tool to use on their field. IRIS-MRS-AI has 2 main modules that are Advanced User and Normal User module. For further information please read the documentation.
 
 # Features
