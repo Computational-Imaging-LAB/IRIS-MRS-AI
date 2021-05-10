@@ -81,7 +81,7 @@ Should you publish material that made use of IRIS-MRS-AI, please cite the follow
 # Help and Support
 - There isn't known any bug or issue up to now. 
 - If you see any bug or issue, please  submit a topic in issues, or contact: abdullahbas@boun.edu.tr
--
+
 
 # License
 - MIT License
@@ -89,6 +89,5 @@ Should you publish material that made use of IRIS-MRS-AI, please cite the follow
 # Acknowledgement
 - This project was funded by TUBITAK 216S432. We thank all open-source MR and MRS tools. 
 - IRIS-MRS-AI uses some functions of [FID-A](https://github.com/CIC-methods/FID-A), check [this link](https://github.com/CIC-methods/FID-A/blob/master/LICENSE.txt) for license.
--
 - If there is any function that I forget to mention about name/link/citation, please let me know.
 
