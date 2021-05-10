@@ -41,7 +41,7 @@ IRIS-MRS-AI is the tool that classifies IDH and TERTp mutations in gliomas using
 
 
 # Prerequirements
-- [MATLAB R2020b](https://www.fil.ion.ucl.ac.uk/spm/software/download/) (Not required for complied distributions. Only for using on MATLAB)
+- [MATLAB R2020b/a](https://www.fil.ion.ucl.ac.uk/spm/software/download/) (Not required for complied distributions. Only for using on MATLAB)
 
 - IRIS-MRS-AI is tested on Ubuntu 20.04 LTS (	Intel Core i7-8750H, @2.2GHzx12 32 GB 2133 MHz DDR4, Graphics GeForce RTX 2070 Super) , Ubuntu 18.04.4 LTS (Memory 32GIB, Processor Intel Core i7-9800X CPU @3.8GHzx16, Graphics GeForce RTX 2070/PCle/SSE2)
 and Windows (İntel Core i5-6700 HQ, @2.6Ghzx6 8GB Graphics GeForce GTX950M)
