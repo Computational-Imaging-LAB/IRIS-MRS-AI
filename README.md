@@ -57,7 +57,8 @@ For any problem please check the program log and then report it to the issues.
 
 # How to get started and User Documentation
 [Oryx-MRSI Documentation](https://sevimcengiz.github.io/oryx/)
-[Oryx-MRSI Manual](https://github.com/Computational-Imaging-LAB/IRIS-MRS-AI/edit/main/IRIS_Manual.pdf)
+*
+[Oryx-MRSI Manual](https://github.com/Computational-Imaging-LAB/IRIS-MRS-AI/blob/main/IRIS_Manual.pdf)
 
 # Developers
 
