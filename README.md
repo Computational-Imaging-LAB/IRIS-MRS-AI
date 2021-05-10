@@ -1,5 +1,5 @@
-[![Website monip.org](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)](https://sevimcengiz.github.io/)
-[![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](https://sevimcengiz.github.io/oryx/)
+[![Website monip.org](https://img.shields.io/website-down-red/http/monip.org.svg)]()
+[![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)]()
 ![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/abdullahbas)
 # IRIS-MRS-AI
@@ -54,7 +54,7 @@ For using on MATLAB please download this repo and add all folders and subfolders
 For any problem please check the program log and then report it to the issues. 
 
 # How to get started and User Documentation
-- [IRIS-MRS-AI Documentation](https://sevimcengiz.github.io/oryx/)
+- [IRIS-MRS-AI Documentation](https://github.com/Computational-Imaging-LAB/IRIS-MRS-AI/blob/main/IRIS_Manual.pdf)
 
 - [IRIS-MRS-AI Manual](https://github.com/Computational-Imaging-LAB/IRIS-MRS-AI/blob/main/IRIS_Manual.pdf)
 
