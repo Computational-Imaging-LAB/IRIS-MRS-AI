@@ -39,7 +39,7 @@ IRIS-MRS-AI is the tool that classifies IDH and TERTp mutations in gliomas using
 
 -
 
-- ```ROI Analysis``` Region of interest (ROI) analysis at multiple brain atlases like [Schafer2018 100/400 Parcels on 7 resting-state (rs-fMRI) networks](https://pubmed.ncbi.nlm.nih.gov/28981612/) or [MNI thr 0/25/50 brain regions](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Atlases). 
+
 
 
 # Prerequirements
@@ -57,6 +57,7 @@ For any problem please check the program log and then report it to the issues.
 
 # How to get started and User Documentation
 [Oryx-MRSI Documentation](https://sevimcengiz.github.io/oryx/)
+[Oryx-MRSI Manual](https://github.com/Computational-Imaging-LAB/IRIS-MRS-AI/edit/main/IRIS_Manual.pdf)
 
 # Developers
 
