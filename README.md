@@ -7,35 +7,35 @@
 IRIS-MRS-AI is the tool that classifies IDH and TERTp mutations in gliomas using MR Spectroscopy and Mass Spectrometry data. Besides these features, IRIS-MRS-AI is a tool that capable to create new models using users own data. Users can customize the tool to use on their field. IRIS-MRS-AI has 2 main modules that are Advanced User and Normal User module. For further information please read the documentation.
 
 # Features
--  
+
  
-   a. Five different models on MRS data.
+- Five different models on MRS data.
  
-   b. Four different models on MS data.
+- Four different models on MS data.
  
-   c. Plotting tools for visualizing.
+- Plotting tools for visualizing.
    
-   d. Trainer module on custom data.
+- Trainer module on custom data.
    
-   e. 17 machine learning algorithms ready to use.
+- 17 machine learning algorithms ready to use.
    
-   f. 5 different feature selection methods.
+- 5 different feature selection methods.
    
-   g. CRLB thresholding. 
+- CRLB thresholding. 
    
-   h. 1 synthetic data generator.
+- 1 synthetic data generator.
    
-   i. 2 validation methods.
+- 2 validation methods.
    
-   j. Summary reporting of experiment in raw (xlsx,txt) and processed in pdf.
+- Summary reporting of experiment in raw (xlsx,txt) and processed in pdf.
    
-   k. Paper quality figure exporting.
+- Paper quality figure exporting.
    
-   l. Manipulating nearly every components of figure. (Dont need photoshop or similar third party tools)
+- Manipulating nearly every components of figure. (Dont need photoshop or similar third party tools)
    
-   m. Classifier module (Using custom models)
+- Classifier module (Using custom models)
    
-   n. Standalone distributions on Mac, Linux, and Windows. (Can be used on MATLAB simply by cloning this repo.)
+- Standalone distributions on Mac, Linux, and Windows. (Can be used on MATLAB simply by cloning this repo.)
 
 -
 
@@ -43,11 +43,8 @@ IRIS-MRS-AI is the tool that classifies IDH and TERTp mutations in gliomas using
 
 
 # Prerequirements
-- [MATLAB R2020b](https://www.fil.ion.ucl.ac.uk/spm/software/download/)
-- [FSL](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FSL) for FLIRT 
-- [SPM12](https://www.fil.ion.ucl.ac.uk/spm/software/download/)
-- [GUI Layout Toolbox](https://www.mathworks.com/matlabcentral/fileexchange/47982-gui-layout-toolbox)
-- [Widgets Toolbox](https://www.mathworks.com/matlabcentral/fileexchange/66235-widgets-toolbox-compatibility-support)
+- [MATLAB R2020b](https://www.fil.ion.ucl.ac.uk/spm/software/download/) (Not required for complied distributions. Only for using on MATLAB)
+
 - IRIS-MRS-AI is tested on Ubuntu 20.04 LTS (	Intel Core i7-8750H, @2.2GHzx12 32 GB 2133 MHz DDR4, Graphics GeForce RTX 2070 Super) , Ubuntu 18.04.4 LTS (Memory 32GIB, Processor Intel Core i7-9800X CPU @3.8GHzx16, Graphics GeForce RTX 2070/PCle/SSE2)
 and Windows (İntel Core i5-6700 HQ, @2.6Ghzx6 8GB Graphics GeForce GTX950M)
 
