@@ -51,6 +51,8 @@ For installation please download releases from this repo. There are 3 distributi
 
 For using on MATLAB please download this repo and add all folders and subfolders to the current path. Then execute iris.m
 
+For Linux please run run_IRIS.sh path/to/installed/mrr/that/you/specified/in/installing
+
 For any problem please check the program log and then report it to the issues. 
 
 # How to get started and User Documentation
