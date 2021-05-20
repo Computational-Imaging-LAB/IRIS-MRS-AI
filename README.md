@@ -5,7 +5,7 @@
 # IRIS-MRS-AI
 IRIS-MRS-AI is the tool that classifies IDH and TERTp mutations in gliomas using MR Spectroscopy and Mass Spectrometry data. Besides these features, IRIS-MRS-AI is a tool that capable to create new models using users own data. Users can customize the tool to use on their field. IRIS-MRS-AI has 2 main modules that are Advanced User and Normal User module. For further information please read the documentation.
 
-# Version 0.2 will be released in 2 weeks. 
+# Version 0.2 will be released on 30.05.2021 
 
 # Features
 
