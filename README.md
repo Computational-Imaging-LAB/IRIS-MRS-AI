@@ -79,6 +79,7 @@ Should you publish material that made use of IRIS-MRS-AI, please cite the follow
 
 # Release
 - Version 0.1
+- Version 0.2 (Only for standalone Windows)
 
 # Help and Support
 - There isn't known any bug or issue up to now. 
