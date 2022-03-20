@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  width: 45%;
+  height: 45%;
+  font-family: sans-serif;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  text-shadow: 1px 1px 1px #000;
+  padding: 5px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  line-height: 2.5;
+  cursor: pointer;
+  background-image: "background.png";
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+             inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+img:hover {
+  background-color: rgba(23, 14, 196, .4);
+}
+
+img:focus {
+outline: 0;
+}
+
+img:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+</style>
+
+   <script type="text/javascript">
+
+      function setup(htmlComponent) {
+
+         document.getElementById("generateRandomNumber").addEventListener("click", function(event) {
+            htmlComponent.Data = Math.random();
+         });
+      }
+   </script>
+</head>
+
+   <body>
+<img id="generateRandomNumber" src="background.png" alt="Load File" >
+</body>
+
+</html>
