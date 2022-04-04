@@ -1,10 +1,12 @@
-function [trainedClassifier, validationAccuracy] = QuadraticSVM(trainingData,response2,Folds,HoldOut,classt,categoricalVal)
+
+function [trainedClassifier, validationAccuracy] = CoarseKNNS(trainingData,response2,Folds,HoldOut,classt,categoricalVal)
 % [trainedClassifier, validationAccuracy] = trainClassifier(trainingData)
 % Returns a trained classifier and its accuracy. This code recreates the
 % classification model trained in Classification Learner app. Use the
 % generated code to automate training the same model with new data, or to
 % learn how to programmatically train models.
 %
+response2
 %  Input:
 %      trainingData: A matrix with the same number of columns and data type
 %       as the matrix imported into the app.
@@ -61,45 +63,28 @@ response = inputTable.(inputTable.Properties.VariableNames{response2});
 
 isCategoricalPredictor = categoricalVal;
 classes=unique(response(~isnan(response)));
-
 % This code specifies all the classifier options and trains the classifier.
 
 
-try
-classificationKNN = fitcsvm(...
+
+
+template = templateTree(...
+    'MaxNumSplits', 64);
+classificationKNN = fitcensemble(...
     predictors, ...
     response, ...
-    'KernelFunction', 'polynomial', ...
-    'PolynomialOrder', 2, ...
-    'KernelScale', 'auto', ...
-    'BoxConstraint', 1, ...
-    'Standardize', true, ...
-    'ClassNames', classes);
-catch
-    
-    template = templateSVM(...
-    'KernelFunction', 'polynomial', ...
-    'PolynomialOrder', 2, ...
-    'KernelScale', 'auto', ...
-    'BoxConstraint', 1, ...
-    'Standardize', true);
-    classificationKNN = fitcecoc(...
-    predictors, ...
-    response, ...
+    'Method', 'Bag', ...
+    'NumLearningCycles', 30, ...
     'Learners', template, ...
-    'Coding', 'onevsone', ...
     'ClassNames', classes);
-    
-    
-    
-    
-end
+
 
 
 % Create the result struct with predict function
 predictorExtractionFcn = @(y) y(:, predictorNames);
 knnPredictFcn = @(x) predict(classificationKNN, x);
 trainedClassifier.predictFcn = @(x) knnPredictFcn(predictorExtractionFcn(x));
+
 
 
 % Add additional fields to the result struct
@@ -125,7 +110,6 @@ response=response(~isnan(response));
 
 if HoldOut>0
 disp("Holdout method is using with the value of '"+num2str(HoldOut)+"'")
-
 cvp = cvpartition(response, 'Holdout', HoldOut);
 trainingPredictors = predictors(cvp.training, :);
 trainingResponse = response(cvp.training, :);
@@ -133,11 +117,22 @@ trainingIsCategoricalPredictor = isCategoricalPredictor;
 
 
 
+
+template = templateTree(...
+    'MaxNumSplits', 64);
+classificationKNN = fitcensemble(...
+    trainingPredictors, ...
+    trainingResponse, ...
+    'Method', 'Bag', ...
+    'NumLearningCycles', 30, ...
+    'Learners', template, ...
+    'ClassNames', classes);
+
+
 % Create the result struct with predict function
 predictorExtractionFcn = @(y) y(:, predictorNames);
 knnPredictFcn = @(x) predict(classificationKNN, x);
 trainedClassifier.predictFcn = @(x) knnPredictFcn(predictorExtractionFcn(x));
-
 
 
 % Add additional fields to the result struct
@@ -198,15 +193,6 @@ end
 trainedClassifier.RequiredVariables=predictorNames;
 try
 [X,Y,T,AUC,OPTROCPT,SUBY,SUBYNAMES] = perfcurve(response,validationPredictions,1);
-catch
-X=-1;
-Y=-1;
-T=-1;
-AUC=-1;
-OPTROCPT=-1;
-SUBY=-1;
-SUBYNAMES=-1;
-end
 trainedClassifier.plots.AUC=AUC;
 trainedClassifier.plots.OPTROCPT=OPTROCPT;
 trainedClassifier.plots.T=T;
@@ -223,7 +209,4 @@ trainedClassifier.plots.Accuracy=validationAccuracy;
 trainedClassifier.classes=classt;
 
 end
-
-
-
 

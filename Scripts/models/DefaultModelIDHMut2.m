@@ -135,8 +135,17 @@ for i=0:length(2)-1
  
 end
 trainedClassifier.RequiredVariables=predictorNames;
-
-[X,Y,T,AUC,OPTROCPT,SUBY,SUBYNAMES] = perfcurve(validationResponse,validationPredictions,1);
+try
+[X,Y,T,AUC,OPTROCPT,SUBY,SUBYNAMES] = perfcurve(response,validationPredictions,1);
+catch
+X=-1;
+Y=-1;
+T=-1;
+AUC=-1;
+OPTROCPT=-1;
+SUBY=-1;
+SUBYNAMES=-1;
+end
 trainedClassifier.plots.AUC=AUC;
 trainedClassifier.plots.OPTROCPT=OPTROCPT;
 trainedClassifier.plots.T=T;
