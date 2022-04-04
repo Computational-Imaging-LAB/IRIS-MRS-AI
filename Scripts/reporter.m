@@ -5,6 +5,7 @@ tic
 % groups={{[0,1]},{[0,1]},{[0,1]},{[0,1]},{[0,1]}}
 % groupsize
 % iterations={{[50,50,50]},{[50,50,50]},{[50,50,50]},{[50,50,50]},{[50,50,50,50]}}
+makeDOMCompilable();
 
 import mlreportgen.dom.*;
 import mlreportgen.report.*;
